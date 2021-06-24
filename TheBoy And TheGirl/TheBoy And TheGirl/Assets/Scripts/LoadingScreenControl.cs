@@ -6,39 +6,31 @@ using UnityEngine.SceneManagement;
 
 public class LoadingScreenControl : MonoBehaviour
 {
-    public GameObject loadingScreenObj;
-    public Slider slider;
-    public string scenetoLoad;
+    private Slider Lslider;
 
-    AsyncOperation async;
+    public float speed = 0.2f;
+    private float Loadpoint = 0;
 
-    private void Start()
+    private void Awake()
     {
-        LoadScreen();
+        Lslider = gameObject.GetComponent<Slider>();
+    }
+    void Start()
+    {
+        Progress(1f);
     }
 
-        public void LoadScreen()
-        {
-        StartCoroutine(LoadingScreen());
-        }
+    void Update()
+    {
+        if (Lslider.value < Loadpoint)
+            Lslider.value += speed * Time.deltaTime;
 
-            IEnumerator LoadingScreen()
-            {
-                loadingScreenObj.SetActive(true);
-                async = SceneManager.LoadSceneAsync(2);
-                async.allowSceneActivation = false;
+        if (Lslider.value == Loadpoint)
+            SceneManager.LoadScene("Level 2");
+    }
 
-                while (async.isDone == false)
-                {
-                    slider.value = async.progress;
-                    if (async.progress == 0.9f)
-                    {
-                        slider.value = 1f;
-                        async.allowSceneActivation = true;
-                        Debug.Log("Works");
-                    }
-                    yield return new WaitForSeconds(10F);
-
-        }
-            }
+    public void Progress(float newProgress)
+    {
+        Loadpoint = Lslider.value + newProgress;
+    }
 }

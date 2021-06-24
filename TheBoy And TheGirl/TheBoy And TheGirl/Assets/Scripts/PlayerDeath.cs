@@ -15,6 +15,10 @@ public class PlayerDeath : MonoBehaviour {
             collision.transform.position = EnemyspawnPoint.position;
             Player.transform.position = RespawnPoint.position; 
         }
+        if (collision.transform.CompareTag("EnemyPatrol"))
+        {
+            Player.transform.position = RespawnPoint.position;
+        }
     }
 
 }
