@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class PlayButton : MonoBehaviour
+public class ButtonLoad : MonoBehaviour
 {
-    public void SceneLoader(string scene)
+    public void LoadScene(string scene)
     {
         SceneManager.LoadScene(scene);
     }
