@@ -283,7 +283,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 92802667}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.1294775, y: -1.0846124, z: -10}
+  m_LocalPosition: {x: -4.013013, y: -1.0846124, z: -10}
   m_LocalScale: {x: 1, y: -0.9, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1757,9 +1757,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4873597284148334099, guid: 5f4015097ba9a864db67890b3e58e8d9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -6710865356217939839, guid: b85b1fca6d45ea04696520e2e6fda8b8, type: 3}
     - target: {fileID: 4873597284148334102, guid: 5f4015097ba9a864db67890b3e58e8d9, type: 3}
       propertyPath: m_Name
-      value: Player (1)
+      value: Player 2
       objectReference: {fileID: 0}
     - target: {fileID: 4873597284148334109, guid: 5f4015097ba9a864db67890b3e58e8d9, type: 3}
       propertyPath: m_Enabled
@@ -1769,7 +1773,8 @@ PrefabInstance:
       propertyPath: spawnPoint
       value: 
       objectReference: {fileID: 583051775}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4873597284642482751, guid: 5f4015097ba9a864db67890b3e58e8d9, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 5f4015097ba9a864db67890b3e58e8d9, type: 3}
 --- !u!1 &1280658746 stripped
 GameObject:
@@ -1781,11 +1786,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4873597285070101070, guid: 5f4015097ba9a864db67890b3e58e8d9, type: 3}
   m_PrefabInstance: {fileID: 1280658745}
   m_PrefabAsset: {fileID: 0}
---- !u!95 &1280658748 stripped
+--- !u!95 &1280658748
 Animator:
-  m_CorrespondingSourceObject: {fileID: 4873597284642482751, guid: 5f4015097ba9a864db67890b3e58e8d9, type: 3}
-  m_PrefabInstance: {fileID: 1280658745}
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1280658746}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1e66594bda61a894dafb9a2a1db854f5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!50 &1280658749 stripped
 Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 4873597284148334097, guid: 5f4015097ba9a864db67890b3e58e8d9, type: 3}
@@ -1810,7 +1829,7 @@ MonoBehaviour:
   movementSpeed: 10
   JumpForce: 20
   groundCheckRad: 0.5
-  anim: {fileID: 1280658748}
+  anim: {fileID: 0}
   feet: {fileID: 1280658747}
   groundLayers:
     serializedVersion: 2

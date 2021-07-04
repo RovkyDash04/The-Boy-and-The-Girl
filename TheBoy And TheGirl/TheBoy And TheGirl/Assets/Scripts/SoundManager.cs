@@ -10,7 +10,6 @@ public class SoundManager : MonoBehaviour {
     // Start is called before the first frame update
     void Start()
     {
-        DontDestroyOnLoad(gameObject);
 
         JumpSound = Resources.Load<AudioClip>("Jump");
         DeathSound = Resources.Load<AudioClip>("Death");
