@@ -21,8 +21,8 @@ TagManager:
   - CollidableObjects
   - BackGround
   - CameraBounce
-  - 
-  - 
+  - Player 2
+  - Player 1
   - 
   - 
   - 
@@ -42,8 +42,17 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Player 2
+    uniqueID: 1511208135
+    locked: 0
+  - name: Player 1
+    uniqueID: 2891864437
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Ground
+    uniqueID: 2498856721
     locked: 0
   - name: Background
     uniqueID: 1399234355

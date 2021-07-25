@@ -6,6 +6,13 @@ public class PlayerDeath : MonoBehaviour {
     public Transform RespawnPoint;
     public Transform EnemyspawnPoint;
     public GameObject Player;
+    
+    
+    
+    
+    
+    
+    
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.transform.CompareTag("Enemy"))
