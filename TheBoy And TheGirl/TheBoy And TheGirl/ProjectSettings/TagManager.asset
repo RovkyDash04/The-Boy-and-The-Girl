@@ -10,6 +10,7 @@ TagManager:
   - EnemyPatrol
   - Waters
   - Fire
+  - Player 2
   layers:
   - Default
   - TransparentFX
