@@ -5,9 +5,6 @@ using UnityEngine;
 public class IgnoreCollision : MonoBehaviour
 {
 
-    public GameObject Player1;
-    public GameObject Player2;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -17,6 +14,5 @@ public class IgnoreCollision : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Physics2D.IgnoreCollision(Player1.GetComponent<Collider2D>, Player2.GetComponent<Collider2D>, false);
     }
 }

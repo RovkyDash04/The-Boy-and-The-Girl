@@ -8,6 +8,8 @@ TagManager:
   - Enemy
   - currency
   - EnemyPatrol
+  - Waters
+  - Fire
   layers:
   - Default
   - TransparentFX

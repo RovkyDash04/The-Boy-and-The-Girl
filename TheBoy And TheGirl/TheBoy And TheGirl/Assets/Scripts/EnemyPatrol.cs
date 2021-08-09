@@ -9,8 +9,12 @@ public class EnemyPatrol : MonoBehaviour
     public LayerMask groundLayers;
 
     public Transform groundCheck;
+    public Transform groundCheck2;
 
     bool isFacingRight = true;
+
+    public Sprite leftsprite;
+    public Sprite rightsprite;
 
     RaycastHit2D hit;
 
@@ -24,13 +28,14 @@ public class EnemyPatrol : MonoBehaviour
         if (hit.collider != false) {
             if (isFacingRight) {
                 rb.velocity = new Vector2(speed, rb.velocity.y);
+                this.GetComponent<SpriteRenderer>().sprite = rightsprite;
             }
             else {
                 rb.velocity = new Vector2(-speed, rb.velocity.y);
             }
         } else {
             isFacingRight = !isFacingRight;
-            transform.localScale = new Vector3(-transform.localScale.x, 1f, 1f);
+            transform.localScale = new Vector3(-transform.localScale.x, 2.5f, 2.5f);
         }
     }
 }
