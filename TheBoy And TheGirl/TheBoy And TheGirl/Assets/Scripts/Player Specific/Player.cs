@@ -2,8 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player : MonoBehaviour
-{
+public class Player : MonoBehaviour {
     public KeyCode left;
     public KeyCode right;
     public KeyCode jump;
@@ -29,18 +28,19 @@ public class Player : MonoBehaviour
     {
         isGrounded = Physics2D.OverlapCircle(feet.position, groundCheckRad, groundLayers);
 
-        if (Input.GetKey(left)) 
+        if (Input.GetKey(left))
         {
             RB.velocity = new Vector2(-movementSpeed, RB.velocity.y);
             anim.SetBool("IsRunning", true);
             transform.localScale = new Vector3(-2f, 2f, 2f);
-        } 
+        }
         else if (Input.GetKey(right))
         {
             RB.velocity = new Vector2(movementSpeed, RB.velocity.y);
             anim.SetBool("IsRunning", true);
             transform.localScale = new Vector3(2f, 2f, 2f);
-        } else
+        }
+        else
         {
             RB.velocity = new Vector2(0, RB.velocity.y);
             anim.SetBool("IsRunning", false);
@@ -51,7 +51,8 @@ public class Player : MonoBehaviour
             RB.velocity = new Vector2(RB.velocity.x, JumpForce);
             anim.SetBool("IsGrounded", false);
             SoundManager.PlaySound("Jump");
-        } else
+        }
+        else
         {
             anim.SetBool("IsGrounded", true);
         }

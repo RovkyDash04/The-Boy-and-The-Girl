@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class TrackingEnemy : MonoBehaviour {
     private Transform target;
-    private Transform target2;
     public float speed;
 
 

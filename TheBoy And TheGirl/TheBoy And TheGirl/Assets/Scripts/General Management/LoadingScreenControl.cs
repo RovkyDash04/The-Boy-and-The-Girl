@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class LoadingScreenControl : MonoBehaviour
 {
     private Slider Lslider;
+    public GameObject Gameobject;
 
     public float speed = 0.2f;
     private float Loadpoint = 0;
@@ -27,6 +28,7 @@ public class LoadingScreenControl : MonoBehaviour
 
         if (Lslider.value == Loadpoint)
             SceneManager.LoadScene("Level 2");
+        Destroy(Gameobject);
     }
 
     public void Progress(float newProgress)
