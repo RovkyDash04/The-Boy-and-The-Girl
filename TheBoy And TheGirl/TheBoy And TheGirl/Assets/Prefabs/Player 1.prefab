@@ -10,8 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4873597284148334098}
   - component: {fileID: 4873597284148334099}
+  - component: {fileID: 4894245744337161022}
   - component: {fileID: 4873597284148334096}
   - component: {fileID: 4873597284148334097}
+  - component: {fileID: 1133175150902819738}
   - component: {fileID: 4873597284148334109}
   - component: {fileID: 4593941117617415481}
   - component: {fileID: 4873597284642482751}
@@ -89,6 +91,31 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &4894245744337161022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4873597284148334102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e09522fb741cee4992c65609584f1b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  left: 276
+  right: 275
+  jump: 273
+  RB: {fileID: 0}
+  movementSpeed: 0
+  JumpForce: 20
+  groundCheckRad: 0
+  anim: {fileID: 0}
+  feet: {fileID: 0}
+  groundLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  isGrounded: 0
 --- !u!61 &4873597284148334096
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -136,6 +163,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
+--- !u!114 &1133175150902819738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4873597284148334102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7b3df030fb0d0c428e21f73047b987e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player: {fileID: 4873597284148334102}
+  RespawnPoint: {fileID: 0}
 --- !u!114 &4873597284148334109
 MonoBehaviour:
   m_ObjectHideFlags: 0
