@@ -2,8 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WaterDeath : MonoBehaviour
-{
+public class WaterDeath : MonoBehaviour {
 
     public GameObject Player;
     public Transform RespawnPoint;

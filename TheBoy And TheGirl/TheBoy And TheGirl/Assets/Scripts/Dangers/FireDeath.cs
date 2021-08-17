@@ -7,7 +7,6 @@ public class FireDeath : MonoBehaviour
 
     public GameObject Player;
     public Transform RespawnPoint;
-
     private void OnCollisionEnter2D(Collision2D collision)
     {
 

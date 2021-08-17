@@ -264,7 +264,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 8.52444
+  orthographic size: 6.25
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -288,7 +288,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 92802667}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.859929, y: -1.0846128, z: -10}
+  m_LocalPosition: {x: -7.646843, y: -3.3590522, z: -15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -597,10 +597,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 284998535}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3c09de0665e5ce4589c8c42583f01c1, type: 3}
+  m_Script: {fileID: 11500000, guid: c7b3df030fb0d0c428e21f73047b987e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 284998535}
+  RespawnPoint: {fileID: 0}
 --- !u!1 &304049910
 GameObject:
   m_ObjectHideFlags: 0
@@ -1692,7 +1693,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1022776738}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.35, y: 1.2, z: 0}
+  m_LocalPosition: {x: 4.65, y: 2, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1986,20 +1987,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 658467632388440910, guid: ded1832789d727f4ea4e8237d9a25258, type: 3}
   m_PrefabInstance: {fileID: 5368614263285219425}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1261858972
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1261858964}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f28bcbfbcbca02b42a44ca3d01179ee1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Player: {fileID: 1261858964}
-  RespawnPoint: {fileID: 1610061483}
 --- !u!1 &1294137526
 GameObject:
   m_ObjectHideFlags: 0
@@ -2166,7 +2153,7 @@ GameObject:
   - component: {fileID: 1357116216}
   - component: {fileID: 1357116215}
   - component: {fileID: 1357116217}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: Water
   m_TagString: Waters
   m_Icon: {fileID: 0}
@@ -3839,7 +3826,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1646767987}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.28, y: -3.3251123, z: -10}
+  m_LocalPosition: {x: -11.280001, y: -3.3251119, z: -15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 245299228}
@@ -3938,7 +3925,7 @@ GameObject:
   - component: {fileID: 1789453657}
   - component: {fileID: 1789453656}
   - component: {fileID: 1789453658}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: Fire
   m_TagString: Fire
   m_Icon: {fileID: 0}
@@ -4393,10 +4380,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 16317752195940521, guid: 5f4015097ba9a864db67890b3e58e8d9, type: 3}
+      propertyPath: RespawnPoint
+      value: 
+      objectReference: {fileID: 583051775}
     - target: {fileID: 1133175150902819738, guid: 5f4015097ba9a864db67890b3e58e8d9, type: 3}
       propertyPath: RespawnPoint
       value: 
       objectReference: {fileID: 583051775}
+    - target: {fileID: 1133175150902819738, guid: 5f4015097ba9a864db67890b3e58e8d9, type: 3}
+      propertyPath: danger.m_Bits
+      value: 131072
+      objectReference: {fileID: 0}
     - target: {fileID: 4593941117617415481, guid: 5f4015097ba9a864db67890b3e58e8d9, type: 3}
       propertyPath: RespawnPoint
       value: 
@@ -4493,7 +4488,8 @@ PrefabInstance:
       propertyPath: groundLayers.m_Bits
       value: 17152
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1133175150902819738, guid: 5f4015097ba9a864db67890b3e58e8d9, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 5f4015097ba9a864db67890b3e58e8d9, type: 3}
 --- !u!1 &1827676153
 GameObject:
@@ -6169,6 +6165,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 306317082037488174, guid: ded1832789d727f4ea4e8237d9a25258, type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 1261858964}
+    - target: {fileID: 306317082037488174, guid: ded1832789d727f4ea4e8237d9a25258, type: 3}
+      propertyPath: RespawnPoint
+      value: 
+      objectReference: {fileID: 1610061483}
     - target: {fileID: 658467631875958626, guid: ded1832789d727f4ea4e8237d9a25258, type: 3}
       propertyPath: spawnPoint
       value: 
@@ -6241,6 +6245,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 3567473450954409074, guid: ded1832789d727f4ea4e8237d9a25258, type: 3}
+      propertyPath: RespawnPoint
+      value: 
+      objectReference: {fileID: 1610061483}
     - target: {fileID: 5368614262415773023, guid: ded1832789d727f4ea4e8237d9a25258, type: 3}
       propertyPath: jump
       value: 119
