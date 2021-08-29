@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FallRespawn : MonoBehaviour
 {
-    public Transform spawnPoint;//Add empty gameobject as spawnPoint
+    public Transform spawnPoint; //Add empty gameobject as spawnPoint
     public float minHeightForDeath;
     public GameObject player; //Add your player
 

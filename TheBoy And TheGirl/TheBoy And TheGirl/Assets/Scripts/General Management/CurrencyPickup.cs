@@ -12,8 +12,9 @@ public class CurrencyPickup : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             Destroy(gameObject);
-            LevelManager.instance.IncreaseCurrency(worth);
             SoundManager.PlaySound("Money");
+            LevelManager.instance.IncreaseCurrency(worth);
+            //SoundManager.PlaySound("Money");
         }
     }
 }
