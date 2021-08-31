@@ -11,7 +11,7 @@ public class LoadingScreenControl : MonoBehaviour
 
     public float speed = 0.2f;
     private float Loadpoint = 0;
-    public string Name;
+    public string LevelName;
 
     private void Awake()
     {
@@ -28,7 +28,9 @@ public class LoadingScreenControl : MonoBehaviour
             Lslider.value += speed * Time.deltaTime;
 
         if (Lslider.value == Loadpoint)
-            SceneManager.LoadScene(Name);
+        {
+            SceneManager.LoadScene(LevelName);
+        }
         Destroy(Gameobject);
     }
 
