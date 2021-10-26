@@ -10,14 +10,13 @@ GameObject:
   m_Component:
   - component: {fileID: 658467632388440906}
   - component: {fileID: 658467632388440907}
-  - component: {fileID: 658467632388440904}
+  - component: {fileID: 5368614262415773023}
   - component: {fileID: 3567473450954409074}
+  - component: {fileID: 658467632388440904}
   - component: {fileID: 658467632388440905}
-  - component: {fileID: 658467632388440901}
   - component: {fileID: 8449266516452894817}
   - component: {fileID: 658467631875958626}
   - component: {fileID: 5368614262415773021}
-  - component: {fileID: 5368614262415773023}
   m_Layer: 0
   m_Name: Player 2
   m_TagString: Player
@@ -91,6 +90,45 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &5368614262415773023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 658467632388440910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e09522fb741cee4992c65609584f1b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  left: 276
+  right: 275
+  jump: 273
+  RB: {fileID: 658467632388440905}
+  RunSpeed: 0
+  JumpStrength: 20
+  groundCheckRad: 0.5
+  anim: {fileID: 5368614262415773021}
+  feet: {fileID: 658467633612068630}
+  ground:
+    serializedVersion: 2
+    m_Bits: 33536
+  Grounded: 0
+--- !u!114 &3567473450954409074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 658467632388440910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82cebe3fafa382340b1e1785776ca57f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player: {fileID: 658467632388440910}
+  RespawnPoint: {fileID: 0}
 --- !u!61 &658467632388440904
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -117,20 +155,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.35, y: 0.8685429}
   m_EdgeRadius: 0
---- !u!114 &3567473450954409074
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 658467632388440910}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 82cebe3fafa382340b1e1785776ca57f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Player: {fileID: 658467632388440910}
-  RespawnPoint: {fileID: 0}
 --- !u!50 &658467632388440905
 Rigidbody2D:
   serializedVersion: 4
@@ -152,26 +176,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
---- !u!114 &658467632388440901
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 658467632388440910}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 758fed411af27624cba6bae99e2a7f19, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  movementSpeed: 10
-  rb: {fileID: 658467632388440905}
-  anim: {fileID: 4873597284642482751, guid: 5f4015097ba9a864db67890b3e58e8d9, type: 3}
-  JumpForce: 20
-  feet: {fileID: 658467633612068630}
-  groundLayers:
-    serializedVersion: 2
-    m_Bits: 768
 --- !u!114 &8449266516452894817
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -187,6 +191,7 @@ MonoBehaviour:
   RespawnPoint: {fileID: 0}
   EnemyspawnPoint: {fileID: 0}
   Player: {fileID: 658467632388440910}
+  anim: {fileID: 0}
 --- !u!114 &658467631875958626
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -221,31 +226,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &5368614262415773023
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 658467632388440910}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e09522fb741cee4992c65609584f1b2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  left: 276
-  right: 275
-  jump: 273
-  RB: {fileID: 658467632388440905}
-  movementSpeed: 10
-  JumpForce: 20
-  groundCheckRad: 0.5
-  anim: {fileID: 5368614262415773021}
-  feet: {fileID: 658467633612068630}
-  groundLayers:
-    serializedVersion: 2
-    m_Bits: 256
-  isGrounded: 1
 --- !u!1 &658467633612068631
 GameObject:
   m_ObjectHideFlags: 0

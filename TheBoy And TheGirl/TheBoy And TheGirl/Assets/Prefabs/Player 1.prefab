@@ -14,10 +14,9 @@ GameObject:
   - component: {fileID: 16317752195940521}
   - component: {fileID: 4873597284148334096}
   - component: {fileID: 4873597284148334097}
-  - component: {fileID: 4873597284148334109}
   - component: {fileID: 4593941117617415481}
-  - component: {fileID: 4873597284642482751}
   - component: {fileID: 4873597284642482746}
+  - component: {fileID: 4873597284642482751}
   m_Layer: 0
   m_Name: Player 1
   m_TagString: Player
@@ -107,15 +106,15 @@ MonoBehaviour:
   right: 275
   jump: 273
   RB: {fileID: 0}
-  movementSpeed: 0
-  JumpForce: 20
+  RunSpeed: 0
+  JumpStrength: 20
   groundCheckRad: 0
   anim: {fileID: 0}
   feet: {fileID: 0}
-  groundLayers:
+  ground:
     serializedVersion: 2
     m_Bits: 0
-  isGrounded: 0
+  Grounded: 0
 --- !u!114 &16317752195940521
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -177,26 +176,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!114 &4873597284148334109
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4873597284148334102}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 758fed411af27624cba6bae99e2a7f19, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  movementSpeed: 10
-  rb: {fileID: 4873597284148334097}
-  anim: {fileID: 4873597284642482751}
-  JumpForce: 20
-  feet: {fileID: 4873597285070101070}
-  groundLayers:
-    serializedVersion: 2
-    m_Bits: 768
 --- !u!114 &4593941117617415481
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -212,6 +191,22 @@ MonoBehaviour:
   RespawnPoint: {fileID: 0}
   EnemyspawnPoint: {fileID: 0}
   Player: {fileID: 4873597284148334102}
+  anim: {fileID: 0}
+--- !u!114 &4873597284642482746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4873597284148334102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 975a19d87a67e4744a587d50f41f5193, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnPoint: {fileID: 0}
+  minHeightForDeath: -7
+  player: {fileID: 4873597284148334102}
 --- !u!95 &4873597284642482751
 Animator:
   serializedVersion: 3
@@ -231,21 +226,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &4873597284642482746
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4873597284148334102}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 975a19d87a67e4744a587d50f41f5193, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spawnPoint: {fileID: 0}
-  minHeightForDeath: -7
-  player: {fileID: 4873597284148334102}
 --- !u!1 &4873597285070101071
 GameObject:
   m_ObjectHideFlags: 0

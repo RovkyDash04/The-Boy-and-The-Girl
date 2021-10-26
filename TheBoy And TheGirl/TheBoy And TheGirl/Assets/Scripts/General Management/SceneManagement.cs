@@ -27,4 +27,19 @@ public class SceneManagement : MonoBehaviour
     {
 
     }
+
+    public void Begin()
+    {
+        SceneManager.LoadScene("Level 1");
+    }
+
+    public void Controls()
+    {
+        SceneManager.LoadScene("Controls");
+    }
+
+    public void MainMenu()
+    {
+        SceneManager.LoadScene("Main Menu");
+    }
 }

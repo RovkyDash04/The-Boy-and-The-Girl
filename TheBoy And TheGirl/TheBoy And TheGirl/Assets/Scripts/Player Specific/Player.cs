@@ -9,13 +9,13 @@ public class Player : MonoBehaviour {
 
     public Rigidbody2D RB;
 
-    public float movementSpeed;
-    public float JumpForce = 20f;
+    public float RunSpeed;
+    public float JumpStrength = 20f;
     public float groundCheckRad;
     public Animator anim;
     public Transform feet;
-    public LayerMask groundLayers;
-    public bool isGrounded;
+    public LayerMask ground;
+    public bool Grounded;
 
     // Start is called before the first frame update
     void Start()
@@ -26,35 +26,35 @@ public class Player : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        isGrounded = Physics2D.OverlapCircle(feet.position, groundCheckRad, groundLayers);
+        Grounded = Physics2D.OverlapCircle(feet.position, groundCheckRad, ground);
 
         if (Input.GetKey(left))
         {
-            RB.velocity = new Vector2(-movementSpeed, RB.velocity.y);
-            anim.SetBool("IsRunning", true);
+            RB.velocity = new Vector2(-RunSpeed, RB.velocity.y);
+            anim.SetBool("Running", true);
             transform.localScale = new Vector3(-2f, 2f, 2f);
         }
         else if (Input.GetKey(right))
         {
-            RB.velocity = new Vector2(movementSpeed, RB.velocity.y);
-            anim.SetBool("IsRunning", true);
+            RB.velocity = new Vector2(RunSpeed, RB.velocity.y);
+            anim.SetBool("Running", true);
             transform.localScale = new Vector3(2f, 2f, 2f);
         }
         else
         {
             RB.velocity = new Vector2(0, RB.velocity.y);
-            anim.SetBool("IsRunning", false);
+            anim.SetBool("Running", false);
         }
 
-        if (Input.GetKeyDown(jump) && isGrounded)
+        if (Input.GetKeyDown(jump) && Grounded)
         {
-            RB.velocity = new Vector2(RB.velocity.x, JumpForce);
-            anim.SetBool("IsGrounded", false);
+            RB.velocity = new Vector2(RB.velocity.x, JumpStrength);
+            anim.SetBool("Grounded", false);
             SoundManager.PlaySound("Jump");
         }
         else
         {
-            anim.SetBool("IsGrounded", true);
+            anim.SetBool("Grounded", true);
         }
     }
 }

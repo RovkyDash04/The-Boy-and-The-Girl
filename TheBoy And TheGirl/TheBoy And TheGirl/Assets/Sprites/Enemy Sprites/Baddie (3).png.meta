@@ -1,97 +1,31 @@
 fileFormatVersion: 2
-guid: ef10a71038a66f84fb95f62b07bffc21
+guid: 439996438ca500a4f93f9de11062fcd5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8527442550737655860
-    second: Player_sprite_1
+      213: 1337733846348477089
+    second: Baddie Idle
   - first:
-      213: -1643389817789898457
-    second: Player_sprite_2
+      213: 1531796303062430607
+    second: Baddie Jump
   - first:
-      213: 7211491898151854808
-    second: Player_walk_1
+      213: -7925544256946635452
+    second: Baddie Land
   - first:
-      213: -1247501539174927167
-    second: Player_walk_2
+      213: 2684425992737057314
+    second: Baddie Run 1
   - first:
-      213: -4124101759643554855
-    second: Player_jump
+      213: 6917758430618018649
+    second: Baddie Inter1
   - first:
-      213: -7534391375593514864
-    second: New Piskel (4)_5
+      213: 2133333488343999231
+    second: Baddie Run 2
   - first:
-      213: -4073575346925975060
-    second: New Piskel (4)_6
+      213: 1131275396036662863
+    second: Baddie Inter2
   - first:
-      213: 8286502397655357771
-    second: New Piskel (4)_7
-  - first:
-      213: -3301321024560249998
-    second: New Piskel (4)_8
-  - first:
-      213: -8733975479846638664
-    second: New Piskel (4)_9
-  - first:
-      213: -6730684948049182345
-    second: New Piskel (4)_10
-  - first:
-      213: 2833280596919193521
-    second: New Piskel (4)_11
-  - first:
-      213: -1928062235650731949
-    second: New Piskel (4)_12
-  - first:
-      213: 63842533994128457
-    second: New Piskel (4)_13
-  - first:
-      213: 5381121041272437404
-    second: New Piskel (4)_14
-  - first:
-      213: 116196540721533695
-    second: New Piskel (4)_15
-  - first:
-      213: 453975199368690251
-    second: New Piskel (4)_16
-  - first:
-      213: 8482668531286486572
-    second: New Piskel (4)_17
-  - first:
-      213: 8528009853938536844
-    second: New Piskel (4)_18
-  - first:
-      213: -1157131232695887342
-    second: New Piskel (4)_19
-  - first:
-      213: -1765008466399496269
-    second: New Piskel (4)_20
-  - first:
-      213: 2503960089444099686
-    second: New Piskel (4)_21
-  - first:
-      213: 1309801780157544421
-    second: New Piskel (4)_22
-  - first:
-      213: 7418255931337653302
-    second: New Piskel (4)_23
-  - first:
-      213: -6641496853819140706
-    second: New Piskel (4)_24
-  - first:
-      213: -1788549750828684068
-    second: New Piskel (4)_25
-  - first:
-      213: 2396557496358175285
-    second: New Piskel (4)_26
-  - first:
-      213: 4141757433618620757
-    second: New Piskel (4)_27
-  - first:
-      213: -7174478402401993004
-    second: New Piskel (4)_28
-  - first:
-      213: 1055701839424751027
-    second: New Piskel (4)_29
+      213: 5549736847623070603
+    second: Baddie SideJump
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -123,8 +57,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -136,7 +70,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 128
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -177,113 +111,17 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 256
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Player_sprite_1
+      name: Baddie Idle
       rect:
         serializedVersion: 2
-        x: 41
-        y: 293
-        width: 46
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cc72bb03e2078a980800000000000000
-      internalID: -8527442550737655860
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Player_sprite_2
-      rect:
-        serializedVersion: 2
-        x: 168
-        y: 292
-        width: 48
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 721a323faa18139e0800000000000000
-      internalID: -1643389817789898457
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Player_walk_1
-      rect:
-        serializedVersion: 2
-        x: 40
-        y: 164
-        width: 48
-        height: 77
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8d2e2f95cad541460800000000000000
-      internalID: 7211491898151854808
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Player_walk_2
-      rect:
-        serializedVersion: 2
-        x: 168
-        y: 164
-        width: 49
-        height: 76
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1c4b9bca5fbffaee0800000000000000
-      internalID: -1247501539174927167
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Player_jump
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 44
+        x: 0
+        y: 192
         width: 64
-        height: 68
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -291,8 +129,155 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9dbe1eecc4f34c6c0800000000000000
-      internalID: -4124101759643554855
+      spriteID: 1a23e9b78d5909210800000000000000
+      internalID: 1337733846348477089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baddie Jump
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f83fa403f98024510800000000000000
+      internalID: 1531796303062430607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baddie Land
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44dfe095d7fc20290800000000000000
+      internalID: -7925544256946635452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baddie Run 1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22aeaeab73ff04520800000000000000
+      internalID: 2684425992737057314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baddie Inter1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95363fa04a0d00060800000000000000
+      internalID: 6917758430618018649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baddie Run 2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff26038318f1b9d10800000000000000
+      internalID: 2133333488343999231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baddie Inter2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4697eb9af813bf00800000000000000
+      internalID: 1131275396036662863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baddie SideJump
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8328775240a40d40800000000000000
+      internalID: 5549736847623070603
       vertices: []
       indices: 
       edges: []

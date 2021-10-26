@@ -6,6 +6,7 @@ public class PlayerDeath : MonoBehaviour {
     public Transform RespawnPoint;
     public Transform EnemyspawnPoint;
     public GameObject Player;
+    public Animator anim;
     
     private void OnCollisionEnter2D(Collision2D collision)
     {

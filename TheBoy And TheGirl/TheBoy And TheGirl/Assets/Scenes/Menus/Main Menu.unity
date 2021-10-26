@@ -149,7 +149,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 330165}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44e64c033b4c8a440886a0712819b22f, type: 3}
+  m_Script: {fileID: 11500000, guid: 934b0de3c03042a4aa2aeff456109469, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &330167
@@ -545,9 +545,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 330166}
-        m_TargetAssemblyTypeName: ButtonLoad, Assembly-CSharp
-        m_MethodName: LoadScene
-        m_Mode: 5
+        m_TargetAssemblyTypeName: SceneManagement, Assembly-CSharp
+        m_MethodName: Begin
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -720,9 +720,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 330166}
-        m_TargetAssemblyTypeName: ButtonLoad, Assembly-CSharp
-        m_MethodName: LoadScene
-        m_Mode: 5
+        m_TargetAssemblyTypeName: SceneManagement, Assembly-CSharp
+        m_MethodName: Controls
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
