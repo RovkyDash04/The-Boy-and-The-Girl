@@ -8,15 +8,8 @@ public class PauseMenu: MonoBehaviour
     public static bool Paused = false;
 
     public GameObject PauseMenuUI;
-
-    // Update is called once per frame
-   
-    void Start()
-    {
-    }
     
-    
-    
+    //Checks if Escape button is pressed, and either resumes the game if already paused, or pauses the game    
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -31,6 +24,7 @@ public class PauseMenu: MonoBehaviour
         }
     }
 
+    //Sets the game's time to running, allowing the game to run, and disables the menu that shows up when paused, connected to resume button on pause menu
    public void Resume()
     {
         PauseMenuUI.SetActive(false);
@@ -38,6 +32,7 @@ public class PauseMenu: MonoBehaviour
         Paused = false;
     }
 
+    //Sets the game's time to not running, stopping the game from running, and enabling the pause menu to show. Connected to clicking escape button
     public void DoPause()
     {
         PauseMenuUI.SetActive(true);
@@ -45,6 +40,7 @@ public class PauseMenu: MonoBehaviour
         Paused = true;
     }
 
+    // Loads up Main menu screen, connected to menu button on main screen
     public void OnMenu()
     {
         PauseMenuUI.SetActive(false);

@@ -8,6 +8,7 @@ public class SoundManager : MonoBehaviour {
     static AudioSource audiosrc;
 
     // Start is called before the first frame update
+    //Finds audio files in resources folder, and stores them for use under appropraite viarbale names for use in other C# scripts
     void Start()
     {
 
@@ -18,11 +19,7 @@ public class SoundManager : MonoBehaviour {
         audiosrc = GetComponent<AudioSource>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    //Basically checks what is happening with the character on screen and what sound to play based on the action, such as jumping, dying, etc
 
     public static void PlaySound (string clip)
     {

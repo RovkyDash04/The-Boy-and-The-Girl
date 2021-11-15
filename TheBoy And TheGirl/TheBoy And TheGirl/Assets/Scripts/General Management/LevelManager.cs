@@ -16,21 +16,19 @@ public class LevelManager : MonoBehaviour {
     public int currency = 0;
     public Text currencyUI;
 
-    private void Start()
-    {
-
-    }
-
     private void Awake() {
         instance = this;
     }
 
+
+    //Calls from SoundManager script to access sound files and keeps the player prefab while moving it back to the respawn location.
     public void Respawn() {
         SoundManager.PlaySound("Death");
         GameObject player = Instantiate(playerPrefab, respawnPoint.position, Quaternion.identity);
         cam.Follow = player.transform;
     }
 
+    //Identifies manually set value of coins and adds it to the text on screen taht displays the toal collected, in front of a $ to signify money
     public void IncreaseCurrency(int amount)
     {
         currency += amount;

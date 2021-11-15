@@ -8,6 +8,8 @@ public class FallRespawn : MonoBehaviour
     public float minHeightForDeath;
     public GameObject player; //Add your player
 
+    //Continuously checks if player character is below manually set y-value
+    //and if it is, setting it back at its respawn point
     void Update()
     {
         if (player.transform.position.y < minHeightForDeath)

@@ -18,12 +18,14 @@ public class Player : MonoBehaviour {
     public bool Grounded;
 
     // Start is called before the first frame update
+    //Calls for physics box of player
     void Start()
     {
         RB.GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
+    //A check for all boolean states in and used by animator to animate the player characacter
     void Update()
     {
         Grounded = Physics2D.OverlapCircle(feet.position, groundCheckRad, ground);

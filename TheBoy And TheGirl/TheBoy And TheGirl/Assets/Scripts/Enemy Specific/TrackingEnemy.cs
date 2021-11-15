@@ -17,27 +17,21 @@ public class TrackingEnemy : MonoBehaviour {
     public Transform Player1;
     public Transform Player2;
 
-
-    // Start is called before the first frame update
-    void Start()
-    {
-    }
-
     // Update is called once per frame
+    // Checks constantly if either player is in radius of detetction of the tracking enemy 
     void Update() {
         
         if (Vector2.Distance(transform.position,Player1.position) < 12)
         {
             target = Player1;
-        } else
-        {
-            target = Player2;
-        }
+        } 
         
         
-        
+        // Checks if tracking enemy is able to jump or not
         Grounded = Physics2D.OverlapCircle(feet.position, groundCheckRad, ground);
 
+        //if the player is within the radius of detetction, then the tracking enemy will move towards the player
+        //Also checks x/y co-ordinates for which animation to use, controlled by booleans set and used in animator
         if ((Vector2.Distance(transform.position, target.position) < 12))
         {
             transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
@@ -77,7 +71,8 @@ public class TrackingEnemy : MonoBehaviour {
 
         }
 
-        if (Vector2.Distance(transform.position, target.position) > 10)
+        //if the player is outside the raidus of detction, tracking enemy returns to idle state
+        if (Vector2.Distance(transform.position, target.position) > 12)
         {
             anim.SetBool("Running", false);
             anim.SetBool("Grounded", true);
